@@ -21,7 +21,7 @@ function  handleKeyboardButtonPress(event){
     const currentAlphabetElement=document.getElementById('current-alphabet');
     const currentAlphabet = currentAlphabetElement.innerText;
     const expectedAlphabet = currentAlphabet.toLowerCase();
-    console.log(playerPressed,expectedAlphabet);
+    //console.log(playerPressed,expectedAlphabet);
 
 
     // check matched or not
@@ -29,7 +29,7 @@ function  handleKeyboardButtonPress(event){
         console.log('you get a poin');
 
         const currentScore = getTextElementValueById('current-score')
-        console.log(currentScore);
+        //console.log(currentScore);
 
          //increase the score by 1
          const newScore = currentScore + 1;
@@ -83,13 +83,13 @@ function  handleKeyboardButtonPress(event){
 
         //display/show  the updated life count
 
-       currentLifeElement.innerText = newlife;
+       //currentLifeElement.innerText = newlife;
     }
 
 }
 
 //capture keyboard key press
-document.addEventListener('keyup',handleKeyboardButtonPress)
+document.addEventListener('keyup',handleKeyboardButtonPress);
 
 
 
@@ -129,6 +129,6 @@ function gameOver(){
 
 
     // clear the last selected alphabet highlight
-    const CurrentAlphabet = getElementTextById('current-alphabet');
-    removeBackgroundColorById(CurrentAlphabet);
+    const currentAlphabet = getElementTextById('current-alphabet');
+    removeBackgroundColorById(currentAlphabet);
 }
