@@ -36,7 +36,7 @@ function setTextElementValueById(elementId, value){
 }
 
 function getElementTextById(elementId){
-    const element = ducument.getElementById(elementId);
+    const element = document.getElementById(elementId);
     const text = element.innerText;
     return text;
 
